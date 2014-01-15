@@ -1,0 +1,25 @@
+#RemoveHandler .php
+#AddType application/php5-fcgi php
+#Action application/php5-fcgi /cgi-bin/php5fcgi.fcgi
+#piwik won't work without the upper 2 CHMOD permissions error
+php_flag engine off
+
+Options +FollowSymlinks
+RewriteEngine On
+RewriteBase /
+RewriteRule   ^courses/(.+)$   courseviewext.php?view=$1   [NC,L]
+RewriteRule   ^updates/(.+)$   updates.php?view=$1   [NC,L]
+RewriteRule ^mi_courses.html$ courses.php [R,NC,L]
+RewriteRule ^index.php$ http://www.micomputsolutions.co.uk [R,NC,L]
+
+ErrorDocument 404 /index.php
+
+#Block mySQL injects
+ RewriteCond %{QUERY_STRING} (;|<|>|’|”|\)|%0A|%0D|%22|%27|%3C|%3E|%00).*(/\*|union|select|insert|cast|set|declare|drop|update|md5|benchmark) [NC,OR]
+ 
+ RewriteCond %{QUERY_STRING} \.\./\.\. [OR]
+ 
+ RewriteCond %{QUERY_STRING} (localhost|loopback|127\.0\.0\.1) [NC,OR]
+ RewriteCond %{QUERY_STRING} \.[a-z0-9] [NC,OR]
+ RewriteCond %{QUERY_STRING} (<|>|’|%0A|%0D|%27|%3C|%3E|%00) [NC]
+ # Note: The final RewriteCond must NOT use the [OR] flag.

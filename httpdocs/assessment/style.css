@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	
+body {
+	/*background:url(bg000000.jpg) repeat;*/
+	color:#2d2d2d; 
+	font-size:12px;
+	}
+
+/* spam trapping css to hide input field from Humans */
+.hideInput { display:none !important;}	
+
+body, input, div, p, span, ul, li, h1, h2, h3, h4, h5, h6  {
+	font-family:'Open Sans',"Courier New", Courier, monospace;
+	}
+	
+	
+/*----- GLOBAL -------- */
+
+* {padding:0; margin:0;}
+img {border:none;}
+a {outline:none;}
+a, a:visited {color:#6899FF; text-decoration:none;}
+a:hover, a:active {color:#00acee; text-decoration:underline;}
+.left {float:left;}
+.right {float:right;}
+.centered {margin:0 auto;}
+.indent {text-indent:-9999px;}
+hr {clear:both; visibility:hidden; font-size:0.1em; line-height:0.1em; height:0;} 
+.clear {clear:both;}
+
+* html a {cursor:hand;}
+
+.back {text-align:right; padding:0 50px 0 0;}
+.back a, .back a:visited {font-weight:bold; border-bottom:1px dashed #2d2d2d; padding:0 0 0 0; text-decoration:none;}
+.back a:hover, .back a:active {border-bottom:none;}
+
+
+
+.blue, .blue-padding {color:#00acee; font-weight:bold; word-spacing:-0.4em; padding:0.5em 0 0 0;}
+.blue-padding {padding:1.2em 0 0 0;}
+.cart-pre {background:#2d2d2d; color:#fff; margin:0 5px; text-align:center; padding:10px 7px 0 7px; line-height:1.7em;}
+.single {font-size:35px; padding:0 0 0 2px; font-weight:bold;}
+.cart-pre span {font-size:1.1em!important;}
+
+/*------- LINKS ----------*/
+a.white, a.white:visited {color:#fff; text-decoration:none;}
+a.white:hover, a.white:active {color:#fff; text-decoration:underline;}
+a.black, a.black:visited {color:#2d2d2d; text-decoration:none;}
+a.black:hover, a.black:active {color:#666; text-decoration:underline;}
+.black a, .black a:visited {color:#2d2d2d; text-decoration:underline;}
+.black a:hover, .black a:active {color:#2d2d2d; text-decoration:none;}
+a.lblue, a.lblue:visited {color:#00acee; text-decoration:none;}
+a.lblue:hover, a.lblue:active {color:#00acee; text-decoration:underline;}
+
+
+#pageTitle {font-size:30px; letter-spacing:-.05em; word-spacing:-.09em;}
+#pageTitle a, #pageTitle a:visited {text-decoration:none;}
+#pageTitle a:hover, #pageTitle a:active {text-decoration:none;}
+
+/*----- STRUCTURE ----- */
+#wrap {/*width:910px;*/ padding:10px;}
+
+#header {}
+* html #logo a, * html #logo a:visited {background-image:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/graphics/cosmic_soda_logo.png',sizingMethod='crop');}
+
+#navigation {float:left !important; margin:0 0 0 20px;}
+
+#subcontent {margin:20px 0 0 0; width:940px; height:222px; background:url(http://www.cosmicsoda.com/graphics/newrel_box.png) no-repeat center;}
+* html #subcontent {background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/graphics/newrel_box.png',sizingMethod='crop');}
+
+#content {float:left; width:100%; margin:20px 0 0 0;}
+#content address {font:"Courier New", Courier, monospace; font-size:14px; font-style:normal; font-weight:bold; color: #00ACEE; line-height:13px;}
+* html #content {width:635px;}
+#content h3 {clear:both; font-size:18px; margin:0 0 10px 0;}
+
+#content-catalog-des {font-weight:bold; padding:0 0 0 10px;}
+#sidebar {margin:20px 0 0 647px;}
+* html #sidebar {margin:45px 0 0 640px;}
+
+
+.formFieldProduct {display:none;}
+
+
+/*---- FORMS ----- */
+.nsubmit {width:47px; height:44px; margin:0 0 0 255px;}/* changed */
+
+#search input {border:none; font-size:13px; text-align:right; color:#fff; font-weight:bold;}
+#search label {display:block;padding:0 0 0 3px; font-weight:bold; font-size:1.1em; word-spacing:-.2em;}
+
+/*---- NAVIGATION MENU ----- */
+
+#navigation ul {float:left;}
+#navigation li {float:left; display:block; list-style-type:none; margin:0 0 0 10px;}
+#navigation li a {text-indent:-9999px;}
+
+.global-form {padding:0 80px 0 0;}
+#terms_agree {margin:10px 0 0 0;}
+
+
+/*---- CONTENT_PAGE -----*/
+
+#content-page {line-height:1.5em; padding:0 50px 0 0;}
+#content-page h2 {margin:20px 0;}
+.updated {margin-top:10px; color:#00acee;}
+.updated span {color:#2d2d2d; font-weight:bold;}
+
+/*----- CONTENT_SIZE ----*/
+
+#content-size {padding:0 0 0 0;}
+
+/*---- LOGIN_FORMS -----*/
+
+fieldset {margin:20px 0 0 0; padding:20px; background:#fff; border:1px dashed #2d2d2d;}
+legend {font-size:16px; padding:0 10px; background-color: #fff;}
+fieldset table td {padding:5px 10px;}
+fieldset table td label {font-weight:bold;}
+fieldset p {padding:0; margin:0; font-size:14px;}
+fieldset span {padding:0; margin:0; font-size:14px;}
+fieldset table td input {height:30px; width:250px; border-style: double; background:#6C82B8; font-size:16px; padding-top:5px; color:#fff; padding-left:5px;
+border-bottom-color: black; border-top: none; border-left: none; border-right-color: black;}
+fieldset table td input[type=checkbox] {padding: 0px; border:0;}
+fieldset table td textarea {height:150px; width:300px; border-style: double; border-bottom-color: black; border-top: none; border-left: none; border-right-color: black; background:#6C82B8; font-size:20px; padding-top:5px; color:#fff; padding-left:5px;}
+fieldset table td select {height:30px; width:305px; border:0; background:#6C82B8; font:"Courier New", Courier, monospace; font-size:16px; color:#fff; padding-left:5px;}
+.claim{position: relative; display: inline; float: left; width: 48%; margin: 0 0 18px 10px;}
+.bluset{font-size: 1.3em; padding: 0 4px 0 4px ;position: relative; display: inline; float: left; width: 75%;color:#fff; background: #6C82B8; border-style: solid; border-bottom-color: black; border-top: none; border-left: none; border-right-color: black;}
+.radioset{width: 8%; position: relative; display: inline; float: left; margin:0 0 0 15px; padding: 19px 0 0 0; border-right-style: ridge; height: 37px;}
+
+.formButton {
+font-weight: bold;
+padding: 5px;
+border: 0;
+color: white;
+background: #2D2D2D;
+margin-top: 5px;
+height: 30px;
+width: 300px;
+font-size: 1.5em;}
+#submit-design {margin:40px 0 40px 0; width:539px; height:353px; background:url(http://www.cosmicsoda.com/graphics/submit_design.png) no-repeat; display:block;}
+* html #submit-design {position:relative; background-image:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/graphics/submit_design.png',sizingMethod='crop');}/* changed */
+
+
+#comments-box {padding:10px 20px 20px 20px;}
+#comments-box-left {float:left; width:330px; height:530px; padding:0 10px 0 0; overflow-y:auto;}
+#comments-box-right {float:right; padding:0 0 0 0; background:#ccc;}
+#comments-box-right h1 {padding:0 0 0 20px;}
+#comments-box-right img {border-bottom:20px solid #fff;}
+#comments-box-right form {padding:0 0 10px 20px;}

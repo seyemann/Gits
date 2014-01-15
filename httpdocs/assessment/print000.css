@@ -1,0 +1,124 @@
+body	{
+	font-family: Arial, helvetica, sans-serif;
+}
+
+h1 {
+	font-size: 15pt;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+h1 a,
+h1 a:visited {
+	color: #aaa;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:visited {
+	color: #000;
+}
+#content {
+	font-size: 9pt;
+}
+h2 {
+	font-size: 11pt;
+	padding-top: 20px;
+	border-bottom: 1px solid #cccccc;
+}
+
+h3 {
+	font-size: 10pt;
+	font-weight: bold;}
+li p {
+	margin: 0;
+}
+.hide, .cartLink, #tagline, #skip, #breadcrumbs, #info, #side, #foot,
+#footer, #crumbs, #head-img, #head-nav, #search, img, .menu, .add-product, .submitButton, #header_admin, .print_invoice {
+	display: none;
+}
+table th {
+	text-align: left;
+}
+#modules {
+	display: block;
+}
+.module1 {
+	float:left;
+	width:250px;
+	margin-right: 5px;
+}
+* html .module1 {
+	margin-top: 30px;
+}
+.module2 {
+	float:left;
+	width:250px;
+	margin-left: 5px;
+}
+* html .module2 {
+	margin-top: 30px;
+}
+table {
+ 	border-collapse: collapse;		
+	width: 100%;
+	border: 0;
+	margin-top: 10px;
+    line-height: 17px;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+#total{
+	margin:1em 0;
+	padding:0;
+	width:30%;
+}
+#total dt{
+	width:200px;
+	float:left;
+	font-weight:bold;
+}
+#total dd{
+	margin-left:201px;
+	text-align:right;
+}
+#cart .actions{
+	margin:0;
+	padding:1em 0;
+}
+.prod-builder {
+	font-size: 20px;
+	line-height: 54px;
+}
+.txt-left {
+	font-size: 12px;
+	line-height: 20px;
+}
+.txt-right {
+	font-size: 12px;
+	line-height: 20px;
+}
+.blue {
+	font-weight: bold;
+}
+tr.blue {
+	border-top: 1px solid #666;
+}
+/* ---------------------- float fix ----------------------------- */
+.inner:after, .products li:after, #pagination:after, #total:after, .modules:after{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+* html .inner, * html .products, * html .products li, * html #pagination, * html
+#total, * html .modules{height: 1%;}
+/* end float fix */

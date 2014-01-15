@@ -1,0 +1,86 @@
+/* Tradingeye Inline Editor
+=========================== */
+
+/* Left Container
+=================*/
+#inline_editor, #inline_editor_hidden {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	border: 0;
+	padding: 54px 0 0 1px;
+	width: 169px;
+	height: 100%;
+	background: #a0b6c5 url(http://www.cosmicsoda.com/graphics/admin/blue/logo.gif) no-repeat 25px 13px;
+	border: 0;
+	border-right: 1px solid #627e91;
+	border-left: 1px solid #627e91;
+	z-index: 1000;
+}
+
+dl.inline_menu {
+	background: #a0b6c5 url(http://www.cosmicsoda.com/graphics/admin/blue/dt-tl.gif) no-repeat 0 0;
+	width: 150px;
+	padding: 0;
+	margin: 8px;
+	margin-top: 0;
+}
+
+dl.inline_menu dt	{
+	color: #fff;
+	text-align: left;
+	font: bold 13px Arial-Narrow, helvetica, sans-serif;
+	line-height: 20px;
+	margin: 0;
+	padding: 3px;
+	padding-left: 7px;
+	background: transparent url(http://www.cosmicsoda.com/graphics/admin/blue/header_arrow.gif);
+	height: 20px;
+}
+	
+html> body * html dl.inline_menu dt	{
+	width: auto;
+}	/* End of Tantek hack */
+	
+dl.inline_menu dd {
+	margin: 0;
+	text-align: left;
+	font: normal 11px Verdana, Arial, Helvetica, sans-serif;
+}
+
+dl.inline_menu dd a {
+	display: block;
+	color: #60869f;
+	background: #eff3f5;
+	vertical-align: bottom; /* This fixes Win IE5 gap! */
+	padding: 4px;
+	padding-left: 6px;
+	text-decoration: none;
+	width: 150px;
+	/* Start of Tantek hack */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width: 150px;
+	border-top: 1px solid #eff3f5;
+	border-bottom: 1px solid #eff3f5;
+}
+		
+html>body dl.inline_menu dd a {
+	width: 140px; /* End of Tantek hack */
+}
+* html dl.inline_menu dd a {width:140px;}
+dl.inline_menu dd a:hover, dl.inline_menu dd.active a {
+	background: #fff;
+	color: #374d5b;
+	border-top: 1px solid #cfdae2;
+	border-bottom: 1px solid #cfdae2;
+}
+
+/* [DRK] */
+#show_menu {display: none;}
+#inline_editor_hidden {width: 15px;}
+#inline_editor_hidden .inline_menu {display: none;}
+#inline_editor_hidden #show_menu {display: block;}
+#inline_editor_hidden #show_menu span {display: block; width: 15px; cursor: pointer;}
+/* [/DRK] */
